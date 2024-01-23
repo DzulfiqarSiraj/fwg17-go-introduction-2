@@ -18,13 +18,13 @@ func Pembulatan(n float32) float32 {
 
 	if perseratus > 5 && persepuluh == 9 {
 		bilBulatResult = float32(bilBulat + 1)
-		persepuluhResult = 0.0
-		perseratusResult = 0.00
+		persepuluhResult = 0
+		perseratusResult = 0
 	} else if perseratus > 5 && persepuluh < 9 {
 		persepuluhResult = float32(persepuluh+1) * 0.1
-		perseratusResult = 0.00
-	} else if perseratus < 5 {
-		perseratusResult = 0.00
+		perseratusResult = 0
+	} else if perseratus <= 5 {
+		perseratusResult = 0
 	}
 
 	result := bilBulatResult + persepuluhResult + perseratusResult
