@@ -3,8 +3,10 @@ package main
 import "fmt"
 
 func main() {
-
-	fmt.Println(Pembulatan(4.37))
-	fmt.Println(Pembulatan(4.32))
-	fmt.Println(Pembulatan(3.324))
+	var angka1 float32 = 4.37
+	var angka2 float32 = 4.32
+	var angka3 float32 = 4.324
+	fmt.Println(Pembulatan(angka1))
+	fmt.Println(Pembulatan(angka2))
+	fmt.Println(Pembulatan(angka3))
 }
